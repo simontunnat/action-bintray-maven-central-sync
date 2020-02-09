@@ -1,0 +1,29 @@
+name: 'action-bintray-maven-central-sync'
+description: 'Sync a Maven package from Bintray to Maven Central'
+author: 'Simon Tunnat'
+inputs:
+  username:
+    description: 'Username that should be used to connect to the Bintray API'
+    required: true
+  password:
+    description: 'Password / API Key that should be used to connect to the Bintray API'
+    required: true
+  subject:
+    description: 'The Bintray Subject that contains the repository. Defaults to the "username"'
+    required: false
+  repo:
+    description: 'The Bintray repository that contains the package. Defaults to "maven"'
+    required: false
+  package:
+    description: 'The package to be synced'
+    required: true
+  version:
+    description: 'The package version to be synced'
+    required: true
+
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: upload-cloud
+  color: orange
