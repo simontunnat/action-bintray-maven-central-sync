@@ -26,7 +26,7 @@ The Bintray repository that contains the package. Defaults to "maven".
 ## Usage
 ```yaml
 - name: Sync to Maven Central
-  uses: simontunnat/action-bintray-maven-central-sync@v1
+  uses: simontunnat/action-bintray-maven-central-sync@v1.1
   with:
     username: simontunnat
     password: SECRET_API_KEY
