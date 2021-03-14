@@ -1,4 +1,7 @@
 # action-bintray-maven-central-sync
+> Bintray will be shutdown soon
+> See for details: https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/
+
 GitHub Action for syncing a Maven package from Bintray to Maven Central.
 
 Uses the Bintray REST API:
